@@ -1,0 +1,99 @@
+.main {
+    display: flex;
+    margin-top: 30px;
+}
+
+.position {
+    position: relative;
+}
+
+.background {
+    height: 200px;
+    width: 200px;
+    border: 1px solid black;
+    background-color: rgb(233, 233, 233);
+    border-radius: 10%;
+    margin-left: 30px;
+}
+
+.circle {
+    bottom: 100px;
+    right: 0px;
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
+.top-position {
+    position: absolute;
+    top: 5px;
+    left: 90px;
+}
+
+.right-position {
+    position: absolute;
+    right: 5px;
+    top: 90px;
+}
+
+.bottom-position {
+    position: absolute;
+    bottom: 5px;
+    right: 90px;
+}
+
+.left-position {
+    position: absolute;
+    left: 5px;
+    bottom: 89px;
+}
+
+.top-transform {
+    transform: translate(90px, 5px);
+}
+
+.right-transform {
+    transform: translate(173px, 68px);
+}
+
+.bottom-transform {
+    transform: translate(88px, 129px);
+}
+
+.left-transform {
+    transform: translate(5px, 23px);
+}
+
+.arrow-minute {
+    background-color: black;
+    width: 6px;
+    height: 108px;
+}
+
+.arrow-hour {
+    background-color: black;
+    width: 80px;
+    height: 6px;
+}
+
+.minute-position {
+    position: absolute;
+    top: 15px;
+    left: 98px;
+}
+
+.hour-position {
+    position: absolute;
+    top: 98px;
+    right: 37px;
+}
+
+.minute-transform {
+    transform: translate(98px, -79px);
+}
+
+.hour-transform {
+    transform: translate(83px, 10px);
+}

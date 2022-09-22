@@ -1,0 +1,29 @@
+body {
+    margin: 50px auto;
+    width: 60%;
+}
+
+.text {
+    width: 100%;
+    background-color: aqua;
+    margin: 0px;
+}
+
+.img {
+    height: 420px;
+    float:left;
+    width: 80%;
+    background-color: aquamarine;
+}
+
+.float {
+    height: 420px;
+    margin: 0px;
+    background-color: aquamarine;
+    overflow: auto;
+}
+
+.img2 {
+    height: 150px;
+    width: 100%;
+}

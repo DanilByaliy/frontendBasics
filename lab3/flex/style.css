@@ -1,0 +1,33 @@
+body {
+    margin: 0px;
+    height: 100vh;
+}
+
+.text {
+    height: 18.75%;
+    width: 100%;
+    background-color: rgb(255, 0, 76);
+    margin: 0px;
+}
+
+.flex {
+    height: 50%;
+    display: flex;
+}
+
+.img {
+    width: 75%;
+    background-color: #b07fff;
+}
+
+.text2 {
+    width: 25%;
+    margin: 0px;
+    background-color: rgb(69, 207, 53);
+}
+
+.img2 {
+    height: 31.25%;
+    width: 100%;
+    display: block;
+}

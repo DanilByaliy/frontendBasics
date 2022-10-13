@@ -20,7 +20,7 @@ element2.addEventListener('click', () => {
 
 const getLastImage = () => {
     const arrImg = document.querySelectorAll('.image');
-    return arrImg[arrImg.length - 1];
+    if (arrImg[0]) return arrImg[arrImg.length - 1];
 }
 
 const buttonIncrease = document.querySelector('.increase');
@@ -28,12 +28,14 @@ const buttonReduce = document.querySelector('.reduce');
 
 buttonIncrease.addEventListener('click', () => {
     const image = getLastImage();
+    if (!image) return;
     const width = image.width;
     image.style.width = width + 50 + 'px';
 });
 
 buttonReduce.addEventListener('click', () => {
     const image = getLastImage();
+    if (!image) return;
     const width = image.width;
     image.style.width = width - 50 + 'px';
 });
@@ -49,5 +51,7 @@ buttonAdd.addEventListener('click', () => {
 });
 
 buttonRemove.addEventListener('click', () => {
-    getLastImage().remove()
+    const image = getLastImage();
+    if (!image) return;
+    image.remove()
 });

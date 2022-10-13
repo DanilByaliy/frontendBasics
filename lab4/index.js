@@ -18,16 +18,36 @@ element2.addEventListener('click', () => {
      + '000000').substring(2,8).toUpperCase()
 });
 
-const image = document.querySelector('.image');
+const getLastImage = () => {
+    const arrImg = document.querySelectorAll('.image');
+    return arrImg[arrImg.length - 1];
+}
+
 const buttonIncrease = document.querySelector('.increase');
 const buttonReduce = document.querySelector('.reduce');
 
 buttonIncrease.addEventListener('click', () => {
+    const image = getLastImage();
     const width = image.width;
     image.style.width = width + 50 + 'px';
 });
 
 buttonReduce.addEventListener('click', () => {
+    const image = getLastImage();
     const width = image.width;
     image.style.width = width - 50 + 'px';
+});
+
+const buttonAdd = document.querySelector('.add');
+const buttonRemove = document.querySelector('.remove');
+
+buttonAdd.addEventListener('click', () => {
+    const img = document.createElement('img');
+    img.className = 'image';
+    img.src = "./images/vin.jpg";
+    buttonIncrease.before(img);
+});
+
+buttonRemove.addEventListener('click', () => {
+    getLastImage().remove()
 });

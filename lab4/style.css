@@ -3,5 +3,15 @@ ul {
 }
 
 img {
-    width: 800px;
+    width: 500px;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.buttons > button {
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
 }

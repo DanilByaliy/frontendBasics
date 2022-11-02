@@ -1,0 +1,8 @@
+.button {
+    margin: 20px;
+    margin-left: 40px;
+}
+
+.input-error {
+    background-color: rgb(255, 165, 165);
+}

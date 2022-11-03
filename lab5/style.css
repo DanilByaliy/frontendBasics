@@ -6,3 +6,14 @@
 .input-error {
     background-color: rgb(255, 165, 165);
 }
+
+td {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    background-color: white;
+}
+
+.color-picker {
+    margin-left: 80px;
+}

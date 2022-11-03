@@ -59,3 +59,44 @@ document.querySelector(".submit").onclick = function() {
     
     return false;
 };
+
+const table = document.querySelector('.table');
+const colorPicker = document.querySelector('.color-picker');
+
+for (let i = 0; i < 6; i++) {
+    const tr = document.createElement('tr');
+    for (let j = 0; j < 6; j++) {
+        const num = i * 6 + j + 1;
+        const td = document.createElement('td');
+        td['id'] = num;
+        td.textContent = num;
+        tr.appendChild(td);
+    }
+    table.appendChild(tr);
+}
+
+const getRandomColor = () => {
+    return '#' + (Math.random().toString(16)
+        + '000000').substring(2,8).toUpperCase();
+} 
+
+const myCell = document.getElementById('21');
+
+myCell.onclick = function () {
+    myCell.style.backgroundColor = colorPicker.value;
+}
+
+myCell.ondblclick = function () {
+    const randomColor = getRandomColor();
+    for (let i = 1; i < 4; i++) {
+        const tr = document.createElement('tr');
+        for (let j = 1; j < 7; j++) {
+            const cell = document.getElementById(`${(i) * 12 + j - 6}`)
+            cell.style.backgroundColor = colorPicker.value;
+        }
+    }
+}
+
+myCell.onmouseover = function () {
+    myCell.style.backgroundColor = getRandomColor();
+}

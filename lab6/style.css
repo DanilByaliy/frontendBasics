@@ -1,0 +1,10 @@
+.user-list {
+    display: flex;
+}
+
+.user {
+    width: 300px;
+    height: 350px;
+    margin: 10px;
+    padding: 10px;
+}

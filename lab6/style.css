@@ -1,10 +1,20 @@
+.load {
+    font-size: large;
+    width: 200px;
+    height: 50px;
+    margin: 20px;
+    margin-left: 800px;
+    background-color: #af4d4d;
+}
+
 .user-list {
     display: flex;
 }
 
 .user {
-    width: 300px;
+    width: 330px;
     height: 350px;
     margin: 10px;
     padding: 10px;
+    background-color: bisque;
 }

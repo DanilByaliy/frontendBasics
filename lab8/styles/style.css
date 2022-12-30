@@ -212,7 +212,7 @@ body {
   height: 380px;
   position: absolute;
   left: 50%;
-  top: 50% ;
+  top: 50%;
   transform: translate(-50%, -50%);
   object-fit: cover;
 }
@@ -267,5 +267,56 @@ body {
   background: linear-gradient(114deg, #389598 -30%, #3b1841 58%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  border: solid 1px #000000 ;
+  border: solid 1px #000000;
+}
+
+.collapsible {
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  padding: 22px 0;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #fff;
+  text-align: left;
+  outline: none;
+  font-size: 20px;
+}
+
+.active,
+.collapsible:hover {
+  background-color: transparent;
+  color: rgba(255, 255, 255, 1);
+}
+
+.collapsible:after {
+  content: "\002B";
+  color: rgba(255, 255, 255, 0.5);
+  float: right;
+  margin-left: 5px;
+  margin-right: 7px;
+}
+
+.active:after {
+  content: "\2212";
+  color: rgba(255, 255, 255, 1);
+}
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  line-height: 1.5;
+  transition: max-height 0.2s ease-out;
+}
+
+.faq {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 46px;
+}
+
+.faq__item {
+  flex-basis: 49.3%;
+  margin-bottom: 32px;
 }

@@ -2,9 +2,9 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-  background: linear-gradient(114deg, #389598 -30%, #3b1841 58%)
-  no-repeat;
+  background: linear-gradient(114deg, #389598 -30%, #3b1841 58%) no-repeat;
   font-weight: 500;
+  color: #fff
 }
 
 .header {
@@ -13,7 +13,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px, 15px 110px 15px;
+  padding: 20px 15px 104px 15px;
 }
 
 .header__logo {
@@ -46,8 +46,9 @@ body {
   background: rgba(255, 255, 255, 0.1);
   border-radius: 10px;
   border: none;
-  padding: 10px 40px;
+  padding: 13px 40px;
   color: #fff;
+  font-size: 20px;
 }
 
 .form__input::placeholder {
@@ -62,9 +63,94 @@ body {
   display: flex;
   list-style-type: none;
   gap: 40px;
+  font-size: 20px;
 }
 
 .header__link {
   color: #fff;
   text-decoration: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main__text {
+  flex-basis: 490px;
+}
+
+.main__title {
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+
+.main__desc {
+  font-size: 20px;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.5);
+  margin-top: 0;
+  margin-bottom: 42px;
+}
+
+.main__btn {
+  font-size: 20px;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 11px 20px;
+}
+
+.main__btn__gradient {
+  background: linear-gradient(214deg, #B75CFF 6%, #671AE4 93%);
+  margin-right: 17px;
+}
+
+.main__list {
+  display: flex;
+  list-style-type: none;
+  padding-left: 0px;
+  text-align: center;
+  gap: 110px;
+  margin-top: 60px;
+  margin-bottom: 24px;
+}
+
+.main__span {
+  display: block;
+  color: #fff;
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.main__item {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 20px;
+}
+
+.main__image {
+  flex-basis: calc(100% - 490px - 115px);
+}
+
+.main__img {
+  width: 100%;
+}
+
+.contact {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 150px;
 }

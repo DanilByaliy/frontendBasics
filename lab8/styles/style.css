@@ -493,3 +493,94 @@ body {
     font-size: 30px;
   }
 }
+
+@media(max-width: 600px) {
+  .header .container {
+    max-width: 400px;
+  }
+
+  .header {
+    padding-bottom: 60px;
+  }
+
+  .main__text {
+    flex-basis: 100%;
+    text-align: center;
+  }
+
+  .main__title {
+    font-size: 34px;
+  }
+
+  .main__list {
+    justify-content: center;
+  }
+
+  .main__desc,
+  .main__btn,
+  .main__item,
+  .desc,
+  .card__link,
+  .collapsible,
+  .banner__link {
+    font-size: 16px;
+  }
+
+  .title {
+    font-size: 30px;
+  }
+
+  .desc {
+    max-width: 300px;
+  }
+
+  .faq,
+  .card {
+    flex-direction: column;
+  }
+
+  .contact {
+    align-items: flex-start;
+    margin-top: 30px;
+    margin-bottom: 100px;
+  }
+
+  .contact__img {
+    margin-bottom: 15px;
+    height: 3.8vw;
+  }
+
+  .card {
+    max-width: 300px;
+    margin: 30px auto 100px;
+  }
+
+  .card__item {
+    margin-bottom: 15px;
+  }
+
+  .main__image {
+    display: none;
+  }
+
+  .banner__title {
+    font-size: 22px;
+  }
+
+  .card__cover,
+  .card__img {
+    height: 50vw;
+  }
+}
+
+@media(max-width: 500px) {
+  .contact__img {
+    height: 4.8vw;
+  }
+}
+
+@media(max-width: 400px) {
+  .contact__img {
+    height: 5.3vw;
+  }
+}
